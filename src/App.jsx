@@ -343,29 +343,6 @@ function App() {
     setNotice("Opening your email application");
   };
 
-  if (loading) {
-    return (
-      <div className="sparkz-loader">
-        <div className="loader-content">
-          <h1>
-            SPAR<span>KZ</span>
-          </h1>
-
-          <p>LIGHT UP YOUR HAPPINESS</p>
-
-          <div className="loader-progress">
-            <span style={{ width: `${progress}%` }} />
-          </div>
-
-          <div className="loader-progress-text">
-            <span>Loading...</span>
-            <span>{progress}%</span>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
   const currentSlide = slides[activeSlide];
 
   return (
@@ -376,18 +353,13 @@ function App() {
         </div>
       )}
 
-      <div className="announcement-bar">
-        <span>WELCOME TO SPARKZ</span>
-        <span>Make Every Celebration Special</span>
-        <a href="#products">Shop Now ↗</a>
-      </div>
 
       <header className="site-header">
         <div className="container header-inner">
           <a href="#home" className="brand-logo">
             <span className="brand-name">
               SPARKZ
-              <small>LIGHT UP YOUR HAPPINESS</small>
+              
             </span>
           </a>
 
@@ -559,11 +531,11 @@ function App() {
         <section className="section categories-section" id="categories">
           <div className="container">
             <div className="section-heading" data-aos="fade-up">
-              <span className="eyebrow">OUR COLLECTION</span>
+             
               <h2>
                 Shop By <span>Category</span>
               </h2>
-              <p>Choose a category to explore our products.</p>
+              
             </div>
 
             <div className="category-grid">
@@ -578,9 +550,9 @@ function App() {
                   <img src={category.image} alt={category.name} loading="lazy" />
                   <span className="category-shade" />
                   <span className="category-card-content">
-                    <small>EXPLORE</small>
+                    
                     <strong>{category.name}</strong>
-                    <span className="category-arrow">↗</span>
+                    
                   </span>
                 </button>
               ))}
@@ -592,11 +564,11 @@ function App() {
           <div className="container">
             <div className="products-heading-row">
               <div className="section-heading section-heading-left">
-                <span className="eyebrow">SPARKZ COLLECTION</span>
+               
                 <h2>
                   Our <span>Products</span>
                 </h2>
-                <p>Find your favourites and add them to your cart.</p>
+                
               </div>
 
               <label className="product-search">
@@ -707,12 +679,7 @@ function App() {
                 <p>
                   Explore our collection and find products for your celebrations.
                 </p>
-                <button
-                  className="button button-light"
-                  onClick={() => showProducts()}
-                >
-                  Explore Products ↗
-                </button>
+                
               </div>
 
               <div className="promo-image">
@@ -728,15 +695,11 @@ function App() {
               <div className="about-image-main">
                 <img src={aboutImg} alt="Festive cracker collection" loading="lazy" />
               </div>
-              <div className="about-badge">
-                <span>MADE FOR</span>
-                <strong>HAPPY</strong>
-                <span>MOMENTS</span>
-              </div>
+             
             </div>
 
             <div className="about-content" data-aos="fade-left">
-              <span className="eyebrow">ABOUT SPARKZ</span>
+              
               <h2>
                 Every Celebration
                 <br />
@@ -775,40 +738,7 @@ function App() {
                 </div>
               </div>
 
-              <a href="#products" className="text-link">
-                Explore Products ↗
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="section why-section">
-          <div className="container">
-            <div className="section-heading" data-aos="fade-up">
-              <span className="eyebrow">WHY SPARKZ</span>
-              <h2>
-                Made For Your <span>Celebrations.</span>
-              </h2>
-              <p>Everything you need to browse our collection.</p>
-            </div>
-
-            <div className="why-grid">
-              {[
-  ["Easy Search", "Find products by name or category."],
-  ["Product Choices", "Browse different cracker collections."],
-  ["Simple Cart", "Update quantities and check totals."],
-  ["Safety First", "Follow all local safety requirements."],
-].map(([title, description]) => (
-  <div className="why-card" key={title} data-aos="fade-up">
-    <div className="why-card-top">
-     
-    </div>
-
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <span className="why-line" />
-  </div>
-))}
+             
             </div>
           </div>
         </section>
@@ -816,11 +746,11 @@ function App() {
         <section className="section testimonials-section" id="reviews">
           <div className="container">
             <div className="section-heading" data-aos="fade-up">
-              <span className="eyebrow">CUSTOMER REVIEWS</span>
+              
               <h2>
                 What People <span>Say.</span>
               </h2>
-              <p>Sample reviews for the website design.</p>
+              
             </div>
 
             <div className="testimonial-grid">
@@ -863,7 +793,7 @@ function App() {
         <section className="section faq-section" id="faq">
           <div className="container faq-grid">
             <div className="faq-intro" data-aos="fade-right">
-              <span className="eyebrow">NEED HELP?</span>
+              
               <h2>
                 Frequently Asked <span>Questions.</span>
               </h2>
@@ -906,7 +836,7 @@ function App() {
         <section className="newsletter-section">
           <div className="container newsletter-inner" data-aos="fade-up">
             <div>
-              <span className="eyebrow">STAY UPDATED</span>
+              
               <h2>
                 Get Our Latest <span>Updates.</span>
               </h2>
@@ -934,11 +864,11 @@ function App() {
         <section className="section cart-section" id="cart">
           <div className="container">
             <div className="section-heading" data-aos="fade-up">
-              <span className="eyebrow">YOUR SELECTION</span>
+             
               <h2>
                 Shopping <span>Cart.</span>
               </h2>
-              <p>Check your products and estimated total.</p>
+              
             </div>
 
             <div className="cart-layout">
@@ -1168,7 +1098,7 @@ function App() {
             <a href="#home" className="brand-logo">
               <span className="brand-name">
                 SPARKZ
-                <small>LIGHT UP YOUR HAPPINESS</small>
+                
               </span>
             </a>
             <p>
