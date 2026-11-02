@@ -910,7 +910,7 @@ function App() {
               <h2>
                 Get Our Latest <span>Updates.</span>
               </h2>
-              <p>Enter your email for collection updates.</p>
+             
             </div>
 
             <form className="newsletter-form" onSubmit={handleNewsletter}>
@@ -926,9 +926,7 @@ function App() {
                 onChange={(event) => setEmail(event.target.value)}
               />
               <button type="submit">Subscribe ↗</button>
-              <small>
-                Demo form. Email addresses are not stored on a server.
-              </small>
+             
             </form>
           </div>
         </section>
@@ -1068,10 +1066,7 @@ function App() {
                 <br />
                 <span>Hear From You.</span>
               </h2>
-              <p>
-                Have a question about a product? Send us an enquiry using
-                the form.
-              </p>
+              
 
               <div className="contact-detail">
                 <span className="contact-detail-icon">✉</span>
@@ -1110,7 +1105,7 @@ function App() {
               <div className="contact-form-heading">
                 <span className="eyebrow">SEND A MESSAGE</span>
                 <h3>Drop Us A Message.</h3>
-                <p>Fill in your details to prepare an email enquiry.</p>
+                
               </div>
 
               <div className="form-row">
@@ -1161,9 +1156,7 @@ function App() {
                 Prepare Email ↗
               </button>
 
-              <small className="form-note">
-                Update the demo recipient email before publishing.
-              </small>
+              
             </form>
           </div>
         </section>
